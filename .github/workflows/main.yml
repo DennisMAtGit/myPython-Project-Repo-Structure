@@ -10,10 +10,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-strategy:
-  matrix:
-    python-version: [3.5, 3.6, 3.7, 3.8, 3.9]
-
 jobs:
   your_job_name:
     steps:
