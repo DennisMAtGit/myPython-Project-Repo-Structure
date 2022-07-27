@@ -11,9 +11,15 @@ on:
     branches: [ "main" ]
 
 jobs:
-  your_job_name:
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
       - name: Run the script
         run: python myPython-Project-Repo-Structure/your_main_file.py
