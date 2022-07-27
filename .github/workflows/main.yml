@@ -22,4 +22,4 @@ jobs:
         with:
           python-version: 3.8 #install the python needed
       - name: Run the script
-        run: python myPython-Project-Repo-Structure/your_main_file.py
+        run: python your_main_file.py
