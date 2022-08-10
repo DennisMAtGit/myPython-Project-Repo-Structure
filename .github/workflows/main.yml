@@ -22,7 +22,7 @@ jobs:
         #  website: oracle.com
         #  release: 17
         #  version: 17.0.1
-        run: sudo apt install jdk-default
+        run: sudo apt install default-jdk
 
       - name: setup python
         uses: actions/setup-python@v3
