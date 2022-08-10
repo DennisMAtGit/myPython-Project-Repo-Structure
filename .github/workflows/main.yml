@@ -21,9 +21,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-          cache: 'maven'
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
+          cache: 'sbt'
+      - name: Build with SBT
+        run: sbt package
 
       - name: setup python
         uses: actions/setup-python@v3
