@@ -40,3 +40,4 @@ jobs:
           python your_main_file.py
           whereis java
           whereis javac
+          java -cp java HelloWorldApp
