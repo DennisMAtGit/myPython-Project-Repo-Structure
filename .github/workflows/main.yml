@@ -17,13 +17,11 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v3
       - name: Set up JDK
-        uses: actions/setup-java@v3
+        uses: oracle-actions/setup-java@v1
         with:
-          distribution: 'temurin'
-          java-version: '11'
-          cache: 'sbt'
-      - name: Build with SBT
-        run: sbt package
+          website: oracle.com
+          release: 17
+          version: 17.0.1
 
       - name: setup python
         uses: actions/setup-python@v3
